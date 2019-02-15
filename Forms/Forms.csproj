@@ -12,4 +12,7 @@
   <ItemGroup>
     <Folder Include="Views\Forms\" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Models\FormClass.cs" />
+  </ItemGroup>
 </Project>
