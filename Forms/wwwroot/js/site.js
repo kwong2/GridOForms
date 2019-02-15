@@ -5,7 +5,7 @@
 
 $(document).ready(function(){
     $(".box").click(function () {
-        alert("Hello");
+        alert("Information about the form goes here");
     });
 });
 
