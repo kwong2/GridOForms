@@ -8,7 +8,3 @@ $(document).ready(function(){
         alert("Information about the form goes here");
     });
 });
-
-// $(box).click(function() {
-//     alert("You've clicked this box yo!");
-// });
