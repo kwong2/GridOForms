@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -9,6 +9,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Forms.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Forms
 {
@@ -31,8 +33,14 @@ namespace Forms
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDbContext<FormContext>(options =>
+                options.UseSqlite(Configuration.GetConnectionString("FormContext")));
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddDbContext<FormsContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("FormsContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
