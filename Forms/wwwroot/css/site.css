@@ -35,3 +35,27 @@ body {
         display: none;
     }
 }
+
+
+.box {
+    background-color: red;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    transition: background-color .5s;
+}
+
+    .box:nth-child(even) {
+        background-color: #ccc;
+        color: #000;
+    }
+
+    .box:hover {
+        background-color: blue;
+    }
+
+.wrapper {
+    width: 600px;
+    display: grid;
+    grid-gap: 10px;
