@@ -3,8 +3,15 @@
 
 // Write your JavaScript code.
 
-$(document).ready(function(){
-    $(".box").click(function () {
-        alert("Information about the form goes here");
-    });
-});
+$(document).ready(function() {
+    $(".box").click(function(){
+        $(".notification").dialog({
+            buttons: {
+                Ok: function() {
+                    $( this ).dialog( "close" );
+                }
+            }
+        });
+        return false;
+    })
+})
