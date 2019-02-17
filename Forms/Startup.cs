@@ -56,7 +56,7 @@ namespace Forms
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Home}/{action=Index}/{id?}");
+                    template: "{controller=Forms}/{action=Index}/{id?}");
             });
         }
     }
