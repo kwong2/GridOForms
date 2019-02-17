@@ -9,8 +9,6 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Forms.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace Forms
 {
@@ -32,9 +30,6 @@ namespace Forms
                 options.CheckConsentNeeded = context => true;
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
-
-            services.AddDbContext<FormsContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("FormContext")));  
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
