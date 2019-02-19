@@ -16,7 +16,7 @@ Unfortunately, I am unable to figure out the certificate error. If you have idea
 
 ## How to
 
-Open the Forms.sln file with Visual Studio, then click Run > Start without Debugging.
+Open the ``Forms/Forms/Forms.sln`` file with Visual Studio, then click Run > Start without Debugging.
 
 ### Note
-I was using Visual Studio Community for Mac for this project. 
+I was using Visual Studio Community for Mac for this project. Any advice and tips are greatly appreciated!
