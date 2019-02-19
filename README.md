@@ -13,3 +13,10 @@ System.Data.SqlClient.SqlException (0x80131904): A connection was successfully e
 ```
 
 Unfortunately, I am unable to figure out the certificate error. If you have ideas on how to fix this error and proceed, do let me know.
+
+## How to
+
+Open the Forms.sln file with Visual Studio, then click Run > Start without Debugging.
+
+### Note
+I was using Visual Studio Community for Mac for this project. 
